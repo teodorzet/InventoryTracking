@@ -1,24 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  Chart as ChartJS,
-  ArcElement,
-  Tooltip,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-} from "chart.js";
-import { Pie, Bar } from "react-chartjs-2";
 import AnalyticsCharts from "../ChartComponent";
-
-ChartJS.register(
-  ArcElement,
-  Tooltip,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  BarElement
-);
 
 const HomepageComponent = () => {
   const [inventory, setInventory] = useState([]);
